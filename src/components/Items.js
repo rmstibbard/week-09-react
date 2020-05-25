@@ -5,7 +5,7 @@ const Items = ({ items }) => (
         <ul>
             {items.map((value, index) => (
                 <li key="{index}">
-                    {value.name + " £" + value.price}
+                    {value.name + " £" + value.price.toFixed(2)}
                 </li>
             ))}
         </ul>
