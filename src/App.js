@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-      <Header />
+      <Header text="This amazing text" />
       <Paragraph />
       <Square />
       <People />
