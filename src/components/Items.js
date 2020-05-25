@@ -4,7 +4,7 @@ const Items = ({ items }) => (
     items ? (
         <ul>
             {items.map((value, index) => (
-                <li key="{index}">
+                <li key="basket-{index}">
                     {value.name + " £" + value.price.toFixed(2)}
                 </li>
             ))}
