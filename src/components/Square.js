@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Square = ({ display }) => (
-    display == "true" ?
+    display === "true" ?
         (
             <div style={{
                 backgroundColor: "red",
