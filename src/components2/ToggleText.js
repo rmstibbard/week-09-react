@@ -15,7 +15,7 @@ class ToggleText extends Component {
         let { initial, alternate } = this.props;
         return (
             <>
-                <button onClick={this.handleClick}>Toggle</button>
+                <button onClick={this.handleClick}>ToggleText</button>
                 <p>{this.state.initial ? initial : alternate}</p>
             </>
         );
