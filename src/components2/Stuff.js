@@ -4,6 +4,7 @@ import Header from './Header';
 import Paragraph from './Paragraph'
 import Clicked from './Clicked';
 import Square from './Square';
+import ToggleText from './ToggleText';
 import People from './People';
 import Items from './Items';
 
@@ -16,6 +17,8 @@ const Stuff = () => (
         <Clicked />
 
         <Square colour="hotpink" />
+
+        <ToggleText initial="Hello" alternate="World" />
 
         <People names={["James P. Sullivan", "Mike Wazowski", "Boo", "Randall Boggs", "Roz", "Fungus"]} />
 
