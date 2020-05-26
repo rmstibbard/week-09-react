@@ -7,10 +7,12 @@ import Square from './Square';
 import ToggleText from './ToggleText';
 import People from './People';
 import Items from './Items';
+import StepCounter from './StepCounter';
+
 
 const Stuff = () => (
     <React.Fragment>
-        <Header>Maximally wondeful</Header>
+        <Header>Absolutely wonderful website</Header>
 
         <Paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quamquam tu hanc copiosiorem etiam soles dicere. Ubi ut eam caperet aut quando? Videmus igitur ut conquiescere ne infantes quidem possint. Magna laus. Bonum patria: miserum exilium. Sed tu istuc dixti bene Latine, parum plane. Duo Reges: constructio interrete. Ergo hoc quidem apparet, nos ad agendum esse natos.</Paragraph>
 
@@ -19,6 +21,8 @@ const Stuff = () => (
         <Square colour="hotpink" />
 
         <ToggleText initial="Hello" alternate="World" />
+
+        <StepCounter max={100} step={5} />
 
         <People names={["James P. Sullivan", "Mike Wazowski", "Boo", "Randall Boggs", "Roz", "Fungus"]} />
 
