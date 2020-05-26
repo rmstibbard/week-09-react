@@ -15,7 +15,7 @@ const Stuff = () => (
 
         <Clicked />
 
-        <Square display="true" />
+        <Square colour="hotpink" />
 
         <People names={["James P. Sullivan", "Mike Wazowski", "Boo", "Randall Boggs", "Roz", "Fungus"]} />
 
