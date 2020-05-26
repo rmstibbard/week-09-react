@@ -3,8 +3,8 @@ import React from 'react';
 const People = ({ names }) => (
     names ? (
         <ul>
-            {names.map((value, index) => (
-                <li key={index}>{value}</li>
+            {names.map((name, index) => (
+                <li key={index}>{name}</li>
             ))}
         </ul>
     ) : <p> Nothing to see here</p>

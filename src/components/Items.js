@@ -2,13 +2,19 @@ import React from 'react';
 
 const Items = ({ items }) => (
     items ? (
-        <ul>
-            {items.map((value, index) => (
-                <li key="basket-{index}">
-                    {value.name + " £" + value.price.toFixed(2)}
-                </li>
+        <table>
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+            </tr>
+            {items.map((item, index) => (
+                <tr>
+                    <td> {item.name} </td>
+                    <td> {" £" + item.price.toFixed(2)}</td>
+                </tr>
             ))}
-        </ul>
+
+        </table>
     ) : <p>No items in basket</p>
 
 );

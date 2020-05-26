@@ -8,20 +8,21 @@ import Items from './Items';
 
 const Stuff = () => (
     <React.Fragment>
-        <Header children="Maximally wondeful" />
+        <Header>Maximally wondeful</Header>
 
-        <Paragraph children="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quamquam tu hanc copiosiorem etiam soles dicere. Ubi ut eam caperet aut quando? Videmus igitur ut conquiescere ne infantes quidem possint. Magna laus. Bonum patria: miserum exilium. Sed tu istuc dixti bene Latine, parum plane. Duo Reges: constructio interrete. Ergo hoc quidem apparet, nos ad agendum esse natos." />
+        <Paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quamquam tu hanc copiosiorem etiam soles dicere. Ubi ut eam caperet aut quando? Videmus igitur ut conquiescere ne infantes quidem possint. Magna laus. Bonum patria: miserum exilium. Sed tu istuc dixti bene Latine, parum plane. Duo Reges: constructio interrete. Ergo hoc quidem apparet, nos ad agendum esse natos.</Paragraph>
 
         <Square display="true" />
 
         <People names={["James P. Sullivan", "Mike Wazowski", "Boo", "Randall Boggs", "Roz", "Fungus"]} />
 
-        <Items items={[
-            { name: "Coffee", price: 2.10 },
-            { name: "Bananas", price: 3.50 },
-            { name: "Milk", price: 250.65 },
-            { name: "The Great Milk Shortage by Simon Schama", price: 12.99 },
-        ]
+        <Items items={
+            [
+                { name: "Coffee", price: 2.10 },
+                { name: "Bananas", price: 3.50 },
+                { name: "Milk", price: 250.65 },
+                { name: "The Great Milk Shortage by Simon Schama", price: 12.99 },
+            ]
         } />
 
     </React.Fragment>
