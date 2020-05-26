@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.mytable {
+  border-collapse: collapse;
+}
+
+.mytable th, .mytable td {
+  border: 1px solid black;
+}
+
+.mytable th {
+  background-color: bisque;
+}
+
+.mytable td {
+  background-color: aliceblue;
+}

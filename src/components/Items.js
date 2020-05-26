@@ -2,7 +2,7 @@ import React from 'react';
 
 const Items = ({ items }) => (
     items ? (
-        <table>
+        <table className="mytable">
             <tr>
                 <th>Item</th>
                 <th>Price</th>
