@@ -2,7 +2,7 @@ import React from 'react';
 
 const People = ({ names }) => (
     names ? (
-        <ul>
+        <ul onClick={() => console.log("Hello, world")}>
             {names.map((name, index) => (
                 <li key={index}>{name}</li>
             ))}
