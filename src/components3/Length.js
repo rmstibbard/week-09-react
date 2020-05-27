@@ -14,17 +14,13 @@ class Length extends Component {
     render() {
         return (
             <div>
-                <label>{this.props.label}</label>
-
-                { /* use the value of the state */}
+                <label>Input: </label>
                 <input
                     onChange={this.handleChange}
                     value={this.state.input}
-                    name={this.props.name}
-                    className="form-control"
                 />
-                <p className="form-text text-muted">
-                    Length: {this.state.input.length} characters
+                <p>
+                    Length: {this.state.input.length}
                 </p>
             </div>
 
