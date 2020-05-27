@@ -11,10 +11,12 @@ class RollCall extends Component {
     handleClick() {
         let { names } = this.props;
         this.setState({
-            max: names.length,
-            index: (this.state.index + 1)
+            index: (this.state.index + 1) % names.length /* Works as reset because:
+                                                            / 1 % 1 = 0 (index = 0)
+                                                              1 % 2 = 1 (etc...)
+                                                              1 % 6 = 0 ... start loop again
+                                                            */
         });
-        //let { max } = this.state.max;
     }
 
     render() {
