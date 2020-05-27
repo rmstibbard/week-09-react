@@ -13,7 +13,7 @@ class PasswordStrength extends Component {
 
     setColour() {
         let length = this.state.input.length;
-        if (length == 0) {
+        if (length === 0) {
             return { backgroundColor: '' }
         }
         if (length < 9) {
