@@ -52,3 +52,7 @@
 .mytable td {
   background-color: aliceblue;
 }
+
+.catch-me {
+  display: block;
+}

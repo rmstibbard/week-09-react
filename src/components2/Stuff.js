@@ -8,7 +8,7 @@ import ToggleText from './ToggleText';
 import People from './People';
 import Items from './Items';
 import StepCounter from './StepCounter';
-
+import CatchMeIfYouCan from './CatchMeIfYouCan';
 
 const Stuff = () => (
     <React.Fragment>
@@ -23,6 +23,8 @@ const Stuff = () => (
         <ToggleText initial="Hello" alternate="World" />
 
         <StepCounter max={100} step={5} />
+
+        <CatchMeIfYouCan jump={100} />
 
         <People names={["James P. Sullivan", "Mike Wazowski", "Boo", "Randall Boggs", "Roz", "Fungus"]} />
 
