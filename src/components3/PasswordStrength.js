@@ -31,13 +31,13 @@ class PasswordStrength extends Component {
         return (
 
             <div>
+                <h2>Password Strength Checker</h2>
                 <label>Input: </label>
                 <input
                     onChange={this.handleChange}
                     value={this.state.input}
-                    style={this.setColour()}
-                />
-            </div >
+                    style={this.setColour()} />
+            </div>
 
         );
     }

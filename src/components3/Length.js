@@ -14,6 +14,7 @@ class Length extends Component {
     render() {
         return (
             <div>
+                <h2>Length Checker</h2>
                 <label>Input: </label>
                 <input
                     onChange={this.handleChange}

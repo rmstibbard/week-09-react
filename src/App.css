@@ -56,3 +56,19 @@
 .catch-me {
   display: block;
 }
+
+h2 {
+  margin-top: 20px;
+}
+
+body {
+  margin-left: 20px;
+}
+
+label {
+  width: 100px;
+}
+
+input {
+  width: 200px;
+}
