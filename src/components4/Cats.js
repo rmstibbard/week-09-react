@@ -1,9 +1,7 @@
 import React from "react";
 
 const Cats = ({ cat }) => (
-    <cat>
-        <h2>Cat {cat}</h2>
-    </cat>
+    <h2>Cat {cat}</h2>
 );
 
 export default Cats;
