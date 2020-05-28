@@ -14,23 +14,30 @@ import Content from "./components4/Content";
 import Figure from "./components4/Figure";
 import FourOhFour from "./components4/FourOhFour";
 import Cats from "./components4/Cats";
-
+import Fields from "./components4/Fields";
 
 const App = () => (
   <Router>
     <Fragment>
       <Header>App</Header>
+
       <Switch>
+
         <Route exact path="/" component={Content}>This is the content</Route>
 
-        <Route path="/figure">
+        <Route exact path="/fields"
+          component={Fields}
+          fields={["First Name", "Last Name", "Email"]}>
+        </Route>
+
+        <Route exact path="/figure">
           <Figure
             caption="A cat, strutting its stuff!"
             src="https://goo.gl/tRdW93"
           />
         </Route>
 
-        <Route path="/cats/:id" render={({ match }) => (
+        <Route exact path="/cats/:id" render={({ match }) => (
           <Cats cat={match.params.id} />
         )} />
 
@@ -39,7 +46,7 @@ const App = () => (
       </Switch>
 
     </Fragment>
-  </Router>
+  </Router >
 );
 
 export default App;
