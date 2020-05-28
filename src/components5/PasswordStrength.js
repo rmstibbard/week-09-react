@@ -31,7 +31,6 @@ class PasswordStrength extends Component {
 
     render() {
         return (
-
             <Form>
                 <Form.Control
                     style={this.setColour()}

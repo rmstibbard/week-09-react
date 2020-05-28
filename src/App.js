@@ -19,6 +19,7 @@ import Fields from "./components4/Fields";
 import Progress from "./components5/Progress";
 import CatchMe from "./components5/CatchMe";
 import PasswordStrength from "./components5/PasswordStrength";
+import List from "./components5/List";
 
 
 const App = () => (
@@ -33,6 +34,8 @@ const App = () => (
         <Route exact path="/progress" component={Progress} />
 
         <Route exact path="/password-strength" component={PasswordStrength} />
+
+        <Route exact path="/list" component={List} />
 
         <Route exact path="/catch-me">
           <CatchMe jump={100} />
