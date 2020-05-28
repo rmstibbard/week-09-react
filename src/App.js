@@ -13,6 +13,7 @@ import Header from "./components4/Header";
 import Content from "./components4/Content";
 import Figure from "./components4/Figure";
 import FourOhFour from "./components4/FourOhFour";
+import Cat from "./components4/Cat";
 
 const App = () => (
   <Router>
@@ -27,6 +28,10 @@ const App = () => (
             src="https://goo.gl/tRdW93"
           />
         </Route>
+
+        <Route path="/cats/:id" render={({ match }) => (
+          <Cat cat={match.params.id} />
+        )} />
 
         <FourOhFour />
 
