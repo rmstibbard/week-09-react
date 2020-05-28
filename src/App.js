@@ -20,6 +20,7 @@ import Progress from "./components5/Progress";
 import CatchMe from "./components5/CatchMe";
 import PasswordStrength from "./components5/PasswordStrength";
 import List from "./components5/List";
+import TempConverter from "./components5/TempConverter";
 
 
 const App = () => (
@@ -36,6 +37,8 @@ const App = () => (
         <Route exact path="/password-strength" component={PasswordStrength} />
 
         <Route exact path="/list" component={List} />
+
+        <Route exact path="/temp" component={TempConverter} />
 
         <Route exact path="/catch-me">
           <CatchMe jump={100} />
