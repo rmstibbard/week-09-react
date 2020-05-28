@@ -13,7 +13,8 @@ import Header from "./components4/Header";
 import Content from "./components4/Content";
 import Figure from "./components4/Figure";
 import FourOhFour from "./components4/FourOhFour";
-import Cat from "./components4/Cat";
+import Cats from "./components4/Cats";
+
 
 const App = () => (
   <Router>
@@ -30,7 +31,7 @@ const App = () => (
         </Route>
 
         <Route path="/cats/:id" render={({ match }) => (
-          <Cat cat={match.params.id} />
+          <Cats cat={match.params.id} />
         )} />
 
         <FourOhFour />

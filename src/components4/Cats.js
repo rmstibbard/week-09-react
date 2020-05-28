@@ -1,9 +1,9 @@
 import React from "react";
 
-const Cat = ({ cat }) => (
+const Cats = ({ cat }) => (
     <cat>
         <h2>Cat {cat}</h2>
     </cat>
 );
 
-export default Cat;
+export default Cats;
