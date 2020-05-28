@@ -16,6 +16,10 @@ import FourOhFour from "./components4/FourOhFour";
 import Cats from "./components4/Cats";
 import Fields from "./components4/Fields";
 
+import Progress from "./components5/Progress";
+import CatchMe from "./components5/CatchMe";
+
+
 const App = () => (
   <Router>
     <Fragment>
@@ -25,9 +29,16 @@ const App = () => (
 
         <Route exact path="/" component={Content}>This is the content</Route>
 
-        <Route exact path="/fields"
-          component={Fields}
-          fields={["First Name", "Last Name", "Email"]}>
+        <Route exact path="/progress" component={Progress} />
+
+        <Route exact path="/catch-me">
+          <CatchMe jump={100} />
+        </Route>
+
+        <Route exact path="/fields">
+          <Fields
+            fields={["First Name", "Last Name", "Email"]}
+          />
         </Route>
 
         <Route exact path="/figure">
