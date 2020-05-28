@@ -25,7 +25,7 @@ class CatchMe extends Component {
                         top: this.state.top
                     }
                 }
-                className="catch-me">
+            >
                 Catch Me If You Can!
             </Button>
         )
